@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Number Base Converter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="bases.js"></script>
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container">
+      <h1>Number Base Converter</h1>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-center">
+          <input type="radio" class="btn-check" name="from" id="binaryFrom" value="binary">
+          <label class="btn btn-success m-1" for="binaryFrom">Binary</label>
+          <input type="radio" class="btn-check" name="from" id="octalFrom" value="octal">
+          <label class="btn btn-success m-1" for="octalFrom">Octal</label>
+          <input type="radio" class="btn-check" name="from" id="decimalFrom" value="decimal" checked>
+          <label class="btn btn-success m-1" for="decimalFrom">Decimal</label>
+          <input type="radio" class="btn-check" name="from" id="hexadecimalFrom" value="hexadecimal">
+          <label class="btn btn-success m-1" for="hexadecimalFrom">Hexadecimal</label>
+          <input type="radio" class="btn-check" name="from" id="otherFrom" value="other">
+          <label class="btn btn-success m-1" for="otherFrom">Other <input id="from" type="number" min="2" max="36" value="3"></label>
+          <textarea id="digits" class="textBox form-control border rounded"></textarea>
+          <div id="error" class="text-danger m-2"></div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+            <input type="radio" class="btn-check" name="to" id="binaryTo" value="binary" checked>
+            <label class="btn btn-success m-1" for="binaryTo">Binary</label>
+            <input type="radio" class="btn-check" name="to" id="octalTo" value="octal">
+            <label class="btn btn-success m-1" for="octalTo">Octal</label>
+            <input type="radio" class="btn-check" name="to" id="decimalTo" value="decimal">
+            <label class="btn btn-success m-1" for="decimalTo">Decimal</label>
+            <input type="radio" class="btn-check" name="to" id="hexadecimalTo" value="hexadecimal">
+            <label class="btn btn-success m-1" for="hexadecimalTo">Hexadecimal</label>
+            <input type="radio" class="btn-check" name="to" id="otherTo" value="other">
+            <label class="btn btn-success m-1" for="otherTo">Other <input id="to" type="number" min="2" max="36" value="3"></label>
+          <div id="result" class="textBox border rounded"></div>
+        </div>
+      </div>
+      <br>
+      <button id="swap" class="btn btn-secondary mx-auto d-block">
+        Swap
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
+
