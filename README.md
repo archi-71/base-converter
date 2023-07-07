@@ -1,5 +1,7 @@
 # Base Converter
 
+Click [here](https://archi-71.github.io/BaseConverter/) to see the project.
+
 This project is a website which allows the user to convert positive integers between different numeric bases.
 
 Users can select common bases such as binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16) with the buttons, or alternatively select the 'Other' button which allows users to input any numeric base from 2-36. Since hexadecimal uses characters A-F after 0-9 for its 16 digits, this is expanded upon up to the letter Z for a maximum base 36 (10 + 26). With the selected bases, the user can then type a number in the left-hand side input box, which will be translated live into the base on the right-hand side. The number entered must conform to the base selected, for example a binary number is only allowed to use the characters '0' and '1'; if the number is not valid in the selected base, an error message is shown. The 'Swap' button swaps the selected base and digits of both sides, allowing the user to quickly edit the output instead of the input.
