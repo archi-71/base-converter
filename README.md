@@ -1,6 +1,6 @@
 # Base Converter
 
-Click [here](https://archi-71.github.io/BaseConverter/) to see the project.
+Click [here](https://archi-71.github.io/base-converter/) to see the project.
 
 This project is a website which allows the user to convert positive integers between different numeric bases.
 
